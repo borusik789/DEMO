@@ -24,5 +24,5 @@ Feature: JS Alerts efficiency verification
     When user type "Boris"
     And  user clicks OK
     Then alert should disappear
-    And Message should say "You entered: Boris"
+    And Message should say "You entered: Bori"
 
