@@ -23,11 +23,6 @@ public class AlertsPage {
     @FindBy(id="result")
     public WebElement resultMessage;
 
-    @FindBy(id="sub-menu")
-    public WebElement hoverButton;
-
-    @FindBy(id="double-click")
-    public WebElement doubleClickButton;
 
 
 

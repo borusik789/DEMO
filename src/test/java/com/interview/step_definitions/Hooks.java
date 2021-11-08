@@ -3,7 +3,6 @@ package com.interview.step_definitions;
 import com.interview.utils.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.BeforeStep;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -32,10 +31,10 @@ public class Hooks {
          Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
-    @BeforeStep
-    public void beforeStep(){
-        System.out.println("I'm before step");
-    }
+//    @BeforeStep
+//    public void beforeStep(){
+//        System.out.println("I'm before step");
+//    }
 //    this hook will run only before scenarios with a tag @db
 
     /**
@@ -59,6 +58,8 @@ public class Hooks {
         //close browser, close DB connection, close tunnel,capture screenshot of the error, etc..
         //this is a hook after
         //runs automatically after every test
+
+
         if (scenario.isFailed()) {
             byte[] data = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(data, "image/png", scenario.getName());
