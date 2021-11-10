@@ -14,7 +14,7 @@ Feature: As user I want to be able to login
     Then user verifies that "<message>" message is displayed
     Examples:
       | email            | password | message                    |
-      | bob789@gmail.com | qwer     | Invalid password.          |
+      | bob789@gmail.com | qwer     | Invalid password          |
       | bob789@gmail.com |          | Password is required.      |
       | wrong@gmail.com  | b1234567 | Authentication failed.     |
       |                  | b1234567 | An email address required. |
