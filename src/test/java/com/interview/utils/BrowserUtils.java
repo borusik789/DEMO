@@ -72,6 +72,7 @@ public class BrowserUtils {
     }
 
     public static void hover(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
         Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(element).perform();
     }

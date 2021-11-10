@@ -32,7 +32,7 @@
             <version>3.0.0-M5</version>
             <configuration>
                 <testFailureIgnore>true</testFailureIgnore>
-                <parallel>classes</parallel>
+                <parallel>methods</parallel>
                 <threadCount>2</threadCount>
                 <forkCount>2C</forkCount>
                 <perCoreThreadCount>false</perCoreThreadCount>

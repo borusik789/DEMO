@@ -44,7 +44,7 @@ public class Driver {
 //                    ChromeOptions chromeOptions = new ChromeOptions();
                             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                             desiredCapabilities.setBrowserName("chrome");
-                            URL gridUrl = new URL("http://54.196.158.171:4444/wd/hub");
+                            URL gridUrl = new URL("http://54.146.225.213:4444/wd/hub");
                             driverPool.set(new RemoteWebDriver(gridUrl, desiredCapabilities));
                         } catch (Exception e) {
                             e.printStackTrace();
