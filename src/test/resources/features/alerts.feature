@@ -1,10 +1,10 @@
-@t
+@UI
 Feature: JS Alerts efficiency verification
 
   Background: user is on javascript alerts page
     Given user is on javascript alerts page
 
-  @t
+  @alerts
   Scenario Outline: Java Script simple, confirmation and prompt alert verification
     When user clicks for "<alert>"
     Then alert should say "<alertMessage>"
