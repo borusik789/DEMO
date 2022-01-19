@@ -38,13 +38,7 @@ public class LoginPage {
         username.sendKeys(usernameValue);
         password.sendKeys(passwordValue, Keys.ENTER);
     }
-    public WebElement getUsername() {
-        return username;
-    }
 
-    public WebElement getPassword() {
-        return password;
-    }
 
 
 
