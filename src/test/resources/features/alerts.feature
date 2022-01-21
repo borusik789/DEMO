@@ -14,7 +14,7 @@ Feature: JS Alerts efficiency verification
 
     Examples:
       | alert      | alertMessage      | usersText | button | resultMessage                     |
-      | JS Alert   | I am a JS Alert   |           | OK     | You successfully clicked an aler |
+      | JS Alert   | I am a JS Alert   |           | OK     | You successfully clicked an alert |
       | JS Confirm | I am a JS Confirm |           | OK     | You clicked: Ok                   |
       | JS Confirm | I am a JS Confirm |           | Cancel | You clicked: Cancel               |
       | JS Prompt  | I am a JS prompt  | Bob       | OK     | You entered: Bob                  |

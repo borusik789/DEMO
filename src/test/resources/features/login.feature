@@ -7,7 +7,7 @@ Feature: As user I want to be able to login
   @smoke
   Scenario: Login with valid credentials
     When user logs in with valid credentials
-    Then user should see "My account - My Stor" page
+    Then user should see "My account - My Store" page
 
   @negative_login
   Scenario Outline: Invalid login with <email> and <password>
