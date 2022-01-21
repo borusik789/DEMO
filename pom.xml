@@ -31,6 +31,7 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>3.0.0-M5</version>
             <configuration>
+                <failIfNoTests>false</failIfNoTests>
                 <testFailureIgnore>true</testFailureIgnore>
                 <parallel>methods</parallel>
                 <threadCount>2</threadCount>
@@ -59,6 +60,7 @@
                         <jsonFiles>
                             <param>**/cucumber*.json</param>
                         </jsonFiles>
+                        <checkBuildResult>false</checkBuildResult>
                     </configuration>
                 </execution>
             </executions>

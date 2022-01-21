@@ -13,11 +13,11 @@ Feature: JS Alerts efficiency verification
     Then result message should be "<resultMessage>"
 
     Examples:
-      | alert      | alertMessage      | usersText | button | resultMessage                     |
+      | alert      | alertMessage      | usersText | button | resultMessage                    |
       | JS Alert   | I am a JS Alert   |           | OK     | You successfully clicked an aler |
-      | JS Confirm | I am a JS Confirm |           | OK     | You clicked: Ok                   |
-      | JS Confirm | I am a JS Confirm |           | Cancel | You clicked: Cancel               |
-      | JS Prompt  | I am a JS prompt  | Bob       | OK     | You entered: Bob                  |
-      | JS Prompt  | I am a JS prompt  |           | OK     | You entered:                  |
-      | JS Prompt  | I am a JS prompt  |           | Cancel | You entered: null                 |
-
+#      | JS Confirm | I am a JS Confirm |           | OK     | You clicked: Ok                  |
+#      | JS Confirm | I am a JS Confirm |           | Cancel | You clicked: Cancel              |
+#      | JS Prompt  | I am a JS prompt  | Bob       | OK     | You entered: Bob                 |
+#      | JS Prompt  | I am a JS prompt  |           | OK     | You entered:                     |
+#      | JS Prompt  | I am a JS prompt  |           | Cancel | You entered: null                |
+#

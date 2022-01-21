@@ -11,7 +11,8 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-report.html",
                 "json:target/cucumber.json",
                 "timeline:target/timeline-report",
-                "rerun:target/rerun.txt"
+                "rerun:target/rerun.txt",
+
         },
 
         features = {"src/test/resources/features"},
